@@ -1,0 +1,8 @@
+site_name: 'WebViews'
+description: 'Views on the web and the tools we used to build it.'
+markdown: redcarpet
+redcarpet:
+    extensions: ["autolink", "lax_spacing", "no_intra_emphasis"]
+permalink: /articles/:title
+exclude: [node_modules, scss, Gruntfile.js, LICENSE, package.json, README.md, fonts, js, img, Gemfile, Gemfile.lock]
+url: "http://webvie.ws"
