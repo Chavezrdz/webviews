@@ -64,19 +64,11 @@ module.exports = function(grunt) {
             dev: {
                 options: {
                     src: '.',
-                    dest: 'build'
+                    dest: 'build',
+                    serve: true,
+                    watch: true
                 },
             },
-        },
-
-        connect: {
-            server: {
-                options: {
-                    keepalive: true,
-                    port: 4000,
-                    base: 'build'
-                }
-            }
         },
 
         availabletasks: {
