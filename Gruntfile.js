@@ -77,10 +77,20 @@ module.exports = function(grunt) {
                     base: 'build'
                 }
             }
+        },
+
+        availabletasks: {
+            tasks: {
+                options: {
+                    filter: 'include',
+                    tasks: ['build', 'default']
+                }
+            }
         }
 
     });
 
-    grunt.registerTask('build', ['jekyll:dev', 'sass', 'cssmin', 'clean:tmp', 'uglify', 'copy']);
-    grunt.registerTask('default', ['build', 'imageoptim']);
+    grunt.registerTask('build', 'Compile a build for production.', ['jekyll:dev', 'sass', 'cssmin', 'clean:tmp', 'uglify']);
+    grunt.registerTask('default', 'Compile a build for production and optimise images.', ['build', 'imageoptim']);
+    grunt.registerTask('tasks', ['availabletasks'])
 };
