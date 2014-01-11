@@ -35,11 +35,11 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: ['scss/**/*'],
-                tasks: ['sass', 'cssmin']
+                tasks: ['build']
             },
             jekyll: {
                 files: ['_includes/**/*', '_layouts/**/*', '_plugins/**/*', '_posts/**/*'],
-                tasks: ['jekyll']
+                tasks: ['build']
             },
             livereload: {
                 files: ['build/**/*'],
