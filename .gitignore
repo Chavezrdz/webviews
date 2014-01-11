@@ -3,6 +3,7 @@
 *.sublime-workspace
 .bundle
 .sass-cache
+vendor
 node_modules
 build
 npm-debug.log
