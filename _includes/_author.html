@@ -1,0 +1,9 @@
+<h2><span>{% if page.path contains 'posts' %}This was a view by{% endif %}</span> {{ author.name }}</h2>
+{% if author.bio %}
+<p>{{ author.bio }}</p>
+{% endif %}
+<ul>
+    <li><a href="https://github.com/{{ author.github }}">Github</a></li>
+    <li><a href="https://twitter/{{ author.twitter }}">Twitter</a></li>
+    <li><a href="{{ author.web }}">Homepage</a></li>
+</ul>

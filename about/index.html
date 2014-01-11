@@ -2,3 +2,8 @@
 layout: page
 title: About
 ---
+
+{% for author_id in site.author_ids %}
+{% assign author = site.authors[author_id] %}
+{% include _author.html %}
+{% endfor %}
