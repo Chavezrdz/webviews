@@ -37,6 +37,10 @@ module.exports = function(grunt) {
                 files: ['scss/**/*'],
                 tasks: ['sass', 'cssmin']
             },
+            jekyll: {
+                files: ['_includes/**/*', '_layouts/**/*', '_plugins/**/*', '_posts/**/*'],
+                tasks: ['jekyll']
+            },
             livereload: {
                 files: ['build/**/*'],
                 options: {
@@ -68,11 +72,19 @@ module.exports = function(grunt) {
             dev: {
                 options: {
                     src: '.',
-                    dest: 'build',
-                    serve: true,
-                    watch: true
+                    dest: 'build'
                 },
             },
+        },
+
+        connect: {
+            server: {
+                options: {
+                    keepalive: true,
+                    port: 4000,
+                    base: 'build'
+                }
+            }
         },
 
         availabletasks: {
