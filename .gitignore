@@ -6,5 +6,6 @@
 vendor
 node_modules
 build
+!build/css
 npm-debug.log
 Gemfile.lock
