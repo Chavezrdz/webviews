@@ -90,6 +90,17 @@ module.exports = function(grunt) {
                     tasks: ['build', 'default']
                 }
             }
+        },
+
+        rsync: {
+            root: {
+                options: {
+                    src: "build/",
+                    dest: "/",
+                    host: "root@162.243.10.212",
+                    recursive: true
+                }
+            }
         }
 
     });
