@@ -4,7 +4,7 @@ markdown: redcarpet
 redcarpet:
     extensions: ['autolink', 'lax_spacing', 'no_intra_emphasis']
 permalink: /views/:title
-exclude: [node_modules, scss, Gruntfile.js, LICENSE, package.json, README.md, fonts, js, img, Gemfile, Gemfile.lock, vendor]
+exclude: [node_modules, scss, Gruntfile.js, LICENSE, package.json, README.md, fonts, js, Gemfile, Gemfile.lock, vendor, bower.json, .bowerrc, CNAME]
 url: 'http://webvie.ws'
 name: 'WebViews'
 author_ids: ['ben', 'dave']
