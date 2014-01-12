@@ -19,7 +19,7 @@ a {
 }
 
 /* Make sure HTML5 elements are behaving */
-article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section { 
+article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section {
 	display: block;
 }
 
@@ -61,13 +61,4 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
     overflow: hidden;
     color: transparent;
-}
-
-/* Clearing floats */
-.group:after { 
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
 }
