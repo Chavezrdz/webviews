@@ -20,6 +20,7 @@
     "grunt-imageoptim": "~1.4.1",
     "grunt-jekyll": "~0.4.1",
     "grunt-svgmin": "~0.3.0",
-    "grunt-available-tasks": "~0.4.1"
+    "grunt-available-tasks": "~0.4.1",
+    "grunt-rsync": "~0.2.1"
   }
 }
