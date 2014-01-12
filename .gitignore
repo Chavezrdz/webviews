@@ -5,7 +5,7 @@
 .sass-cache
 vendor
 node_modules
-build
-!build/css
+build/*
+!build/css/
 npm-debug.log
 Gemfile.lock
