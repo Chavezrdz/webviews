@@ -1,0 +1,45 @@
+$header-gradient-start  : hsla(146, 11%, 47%, 1);
+$header-gradient-stop   : hsla(149, 16%, 42%, 1);
+$header-highlight-color : hsla(0, 0%, 100%, .3);
+$header-border-color    : hsla(148, 17%, 29%, 1);
+$header-color           : hsla(149, 18%, 23%, 1);
+
+header {
+    background: $header-gradient-start linear-gradient($header-gradient-start, $header-gradient-stop);
+    box-shadow: inset 0 -1px 0 $header-highlight-color,
+                0 1px 0 $header-border-color;
+    height: $typecsset-base-line-height * 5;
+    color: $header-color;
+}
+
+header svg {
+    @include svg-shadow(0 1px 1px $header-highlight-color);
+}
+
+header path {
+    fill: $header-color;
+}
+
+.featured-image {
+    position: relative;
+}
+
+.featured-image img {
+    max-height: $typecsset-base-line-height * 14;
+    width:100%;
+}
+
+.featured-image hgroup {
+    position:absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-image hgroup h2 {
+    order: 1;
+}
+
+.featured-image hgroup h1 {
+    order: 2;
+}
