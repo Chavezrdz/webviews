@@ -2,3 +2,28 @@
 layout: default
 ---
 
+{% for post in site.posts limit: 1 %}
+
+    {% if post.imagefeature %}
+        <div class="featured-image">
+            <div class="container">
+                <hgroup>
+                    <h1>{{ post.title }}</h1>
+                    <h2>Published {{ post.date | date_post }} by {{ site.authors[post.author].display_name }}</h2>
+                </hgroup>
+            </div>
+            <img src="{{ site.url }}/images/{{ post.imagefeature }}">
+        </div>
+    {% endif %}
+    <div class="container">
+        {% assign author = site.authors[post.author] %}
+        {% unless post.imagefeature %}
+            <h1 class="page-header">{{ post.title }}</h1>
+        {% endunless %}
+        <div class="inner_content">
+            {{ post.content }}
+            {% include _author.html %}
+        </div>
+    </div>
+
+{% endfor %}
