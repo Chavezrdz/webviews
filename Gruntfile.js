@@ -96,8 +96,8 @@ module.exports = function(grunt) {
             dave: {
                 options: {
                     src: "build/",
-                    dest: "/var/www/webvie.ws/public_html",
-                    host: "dave@162.243.10.212",
+                    dest: "dave@162.243.10.212:/var/www/webvie.ws/public_html",
+                    ssh: true,
                     recursive: true
                 }
             }
