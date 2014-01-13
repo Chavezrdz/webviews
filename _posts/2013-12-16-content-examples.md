@@ -2,6 +2,8 @@
 layout: post
 title: "Post Content Examples And Stuff"
 date: December 16th, 2013
+imagefeature: 01_2014/full_sample.jpg
+author: dave
 ---
 
 If you’re reading this and wondering what kind of post this is, it’s just a reference post for others forking this site and wondering what kind of post content is supported. There’s nothing too fancy, just enough implemented to cover my own needs. If you'd like it to function in some other way, you’re more than welcome, encouraged even, to edit your own fork. Here we have some common elements, all written as [Markdown](http://daringfireball.net/projects/markdown/) and styled for future posts. Let’s start with some lists, shall we? Let’s add some order to this post:
