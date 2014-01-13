@@ -35,6 +35,6 @@ body {
 
 Images are covered too. Small images should scale down whilst not going larger than their original resolutions and large images, those larger than our 1400px maximum wrapper width, will be scaled down to 100% wrapper width and will scale down with browser changes with auto height. Responsive all the things.
 
-![Small Image Preview]({{site.url}}/postimg/small_sample.jpg)
+![Small Image Preview]({{ site.url }}/images/01_2014/inner_sample1.jpg)
 
-![Large Image Preview]({{site.url}}/postimg/full_sample.jpg)
+![Large Image Preview]({{ site.url }}/images/01_2014/inner_sample2.jpg)
