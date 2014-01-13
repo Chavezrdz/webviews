@@ -29,3 +29,10 @@ $typecsset-show-baseline:       false;
 .page-header + p {
     @include typecsset-font-size(24px);
 }
+
+.inner_content {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
