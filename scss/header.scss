@@ -8,7 +8,7 @@ header {
     background: $header-gradient-start linear-gradient($header-gradient-start, $header-gradient-stop);
     box-shadow: inset 0 -1px 0 $header-highlight-color,
                 0 1px 0 $header-border-color;
-    height: $typecsset-base-line-height * 5;
+    // height: $typecsset-base-line-height * 5;
     color: $header-color;
 }
 
@@ -20,26 +20,7 @@ header path {
     fill: $header-color;
 }
 
-.featured-image {
-    position: relative;
-}
-
-.featured-image img {
-    max-height: $typecsset-base-line-height * 14;
-    width:100%;
-}
-
-.featured-image hgroup {
-    position:absolute;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.featured-image hgroup h2 {
-    order: 1;
-}
-
-.featured-image hgroup h1 {
-    order: 2;
+.logo {
+    padding: 10px 0;
+    display: block;
 }
