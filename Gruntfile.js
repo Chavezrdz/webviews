@@ -93,11 +93,11 @@ module.exports = function(grunt) {
         },
 
         rsync: {
-            root: {
+            dave: {
                 options: {
                     src: "build/",
-                    dest: "/",
-                    host: "root@162.243.10.212",
+                    dest: "/var/www/webvie.ws/public_html",
+                    host: "dave@162.243.10.212",
                     recursive: true
                 }
             }
