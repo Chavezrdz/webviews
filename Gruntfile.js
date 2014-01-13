@@ -28,7 +28,7 @@ module.exports = function(grunt) {
                     imageAlpha: true,
                     quitAfter: true
                 },
-                files: ['build/img']
+                files: ['build/images']
             },
         },
 
