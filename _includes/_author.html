@@ -1,4 +1,4 @@
-<h2><span>{% if page.path contains 'posts' %}This was a view by{% endif %}</span> {{ author.name }}</h2>
+<h2><span>{% if page.path | post.path contains 'posts' %}This was a view by{% endif %}</span> {{ author.name }}</h2>
 {% if author.bio %}
 <p>{{ author.bio }}</p>
 {% endif %}
