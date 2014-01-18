@@ -23,7 +23,7 @@ $sans: Helvetica, "Helvetica Neue", Arial, sans-serif;
 $serif: "Sentinel", Cambria, Georgia, serif;
 
 $fbold: 700;
-$fsemibold: 600;
+$fsemi: 600;
 $fmedium: 500;
 
 
@@ -52,9 +52,42 @@ body {
     margin: 0 auto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: $serif;
+}
+
+h1 {
+    font-weight: $fbold;
+    font-size: 52px;
+}
+
+h2 {
+    font-weight: $fsemi;
+    font-size: 45px;
+}
+
+h3 {
+    font-weight: $fsemi;
+    font-size: 36px;
+}
+
+h4 {
+    font-weight: $fsemi;
+    font-size: 30px;
+}
+
+h5 {
+    font-weight: $fsemi;
+    font-size: 24px;
+}
+
+h6 {
+    font-weight: $fmedium;
+    font-size: 22px;
+}
+
 #masthead {
-    background: url(../images/01_2014/stock_001.jpg);
-    background-size: cover;
+    background-size: cover !important;
     background-position: center center;
     min-height: 600px;
     padding-top: 40px;
