@@ -16,6 +16,8 @@ $offwhite: #f3f3f3;
 $offblack: #242424;
 $lightgrey: #6f6f6f;
 $feint: #D6D6D6;
+$dblue: #303642;
+$highlight: #73A4E7;
 
 $sans: Helvetica, "Helvetica Neue", Arial, sans-serif;
 $serif: "Sentinel", Cambria, Georgia, serif;
@@ -66,9 +68,17 @@ body {
 .logo svg {
     width: 48px;
     height: 48px;
-    path {
-        fill: $offwhite;
-    }
+}
+
+.logo svg path {
+    fill: $offwhite;
+    -webkit-transition: fill 0.3s ease;
+    -o-transition: fill 0.3s ease;
+    transition: fill 0.3s ease;
+}
+
+.logo svg:hover path {
+    fill: $highlight;
 }
 
 nav {
@@ -84,4 +94,12 @@ nav {
     li:last-child {
         margin-right: 0;
     }
+}
+
+nav a {
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: $highlight;
 }
