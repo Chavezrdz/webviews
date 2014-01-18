@@ -12,68 +12,76 @@
 //
 //$typecsset-show-baseline:       false;
 
-$sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: Cambria, Georgia, serif;
+$offwhite: #f3f3f3;
+$offblack: #242424;
+$lightgrey: #6f6f6f;
+$feint: #D6D6D6;
 
-@import "mixins";
-@import "header";
+$sans: Helvetica, "Helvetica Neue", Arial, sans-serif;
+$serif: "Sentinel", Cambria, Georgia, serif;
+
+$fbold: 700;
+$fsemibold: 600;
+$fmedium: 500;
+
+
+//@import "mixins";
+// @import "header";
 
 body {
     font-family: $sans;
+    background: $offwhite;
+    color: $offblack;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-.container {
+// Header wrapper
+.wrap_large {
     width: 87.5%;
-    max-width: 1140px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
-.featured-image {
-    //position: relative;
+// Post wrapper
+.wrap_small {
+    width: 87.5%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.featured-image img {
-    max-height: 250px;
-    width:100%;
+#masthead {
+    background: url(../images/01_2014/stock_001.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 600px;
+    padding-top: 40px;
 }
 
-.featured-image hgroup {
-    //display: flex;
-    //flex-direction: column;
-    text-align: center;
-    z-index: 2;
-    position: relative;
-    bottom: 100px;
+.logo {
+    float: left;
+    color: $offwhite;
 }
 
-.featured-image hgroup h2 {
-    //order: 1;
-    font-size: 11px;
-    color: #ededed;
+.logo svg {
+    width: 48px;
+    height: 48px;
+    path {
+        fill: $offwhite;
+    }
+}
+
+nav {
+    float: right;
+    color: $offwhite;
+    font-weight: $fbold;
     text-transform: uppercase;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-    margin: 0;
-}
-
-.featured-image hgroup h1 {
-    //order: 2;
-    font-size: 22px;
-    color: #ededed;
-    font-family: $serif;
-    margin: 0;
-}
-
-.page-header {
-    //margin-top: $typecsset-h1-size;
-}
-
-//.page-header + p {
-//    @include typecsset-font-size(24px);
-//}
-
-.inner_content {
-    img {
-        max-width: 100%;
-        height: auto;
+    margin-top: 12px;
+    li {
+        display: inline;
+        margin-right: 35px;
+    }
+    li:last-child {
+        margin-right: 0;
     }
 }
