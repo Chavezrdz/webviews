@@ -62,3 +62,12 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     color: transparent;
 }
+
+/* Clearing floats */
+.group:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
