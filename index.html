@@ -4,15 +4,16 @@ layout: default
 
 {% for post in site.posts limit: 1 %}
 
+    <!--
     {% if post.imagefeature %}
         <div class="featured-image">
+            <img src="{{ site.url }}/images/{{ post.imagefeature }}">
             <div class="container">
                 <hgroup>
-                    <h1>{{ post.title }}</h1>
                     <h2>Published {{ post.date | date_post }} by {{ site.authors[post.author].display_name }}</h2>
+                    <h1>{{ post.title }}</h1>
                 </hgroup>
             </div>
-            <img src="{{ site.url }}/images/{{ post.imagefeature }}">
         </div>
     {% endif %}
     <div class="container">
@@ -25,5 +26,15 @@ layout: default
             {% include _author.html %}
         </div>
     </div>
+    -->
+
+    <div class="wrap_small">
+
+        <article>
+            <h1>{{ post.title }}</h1>
+            {{ post.content }}
+        </article>
+
+    </div><!-- //wrap_small -->
 
 {% endfor %}

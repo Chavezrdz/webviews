@@ -1,5 +1,29 @@
-<header>
-    <div class="container">
-        <a href="{{ site.url }}">{% include icons/webviews.svg %}</a>
-    </div>
-</header>
+{% for post in site.posts limit: 1 %}
+    {% if page.imagefeature %}
+        <header id="masthead" style="background: url('{{ site.url }}/images/{{ page.imagefeature }}');">
+            <div class="wrap_large group">
+                <a class="logo" href="{{ site.url }}">{% include icons/webviews.svg %}</a>
+                <nav>
+                    <ul>
+                        <li><a href="{{ site.url }}/views" title="Views">Views</a></li>
+                        <li><a href="{{ site.url }}/tags" title="Tags">Tags</a></li>
+                        <li><a href="{{ site.url }}/about" title="About">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    {% else %}
+        <header id="masthead" style="background: url('{{ site.url }}/images/{{ post.imagefeature }}');">
+            <div class="wrap_large group">
+                <a class="logo" href="{{ site.url }}">{% include icons/webviews.svg %}</a>
+                <nav>
+                    <ul>
+                        <li><a href="{{ site.url }}/views" title="Views">Views</a></li>
+                        <li><a href="{{ site.url }}/tags" title="Tags">Tags</a></li>
+                        <li><a href="{{ site.url }}/about" title="About">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    {% endif %}
+{% endfor %}

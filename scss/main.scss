@@ -1,38 +1,161 @@
 // Base font sizes
-$typecsset-base-font-size   : 18px;
-$typecsset-base-line-height : 36px;
+//$typecsset-base-font-size   : 18px;
+//$typecsset-base-line-height : 36px;
 
 // Heading sizes
-$typecsset-h1-size:             48px;
-$typecsset-h2-size:             36px;
-$typecsset-h3-size:             30px;
-$typecsset-h4-size:             24px;
-$typecsset-h5-size:             20px;
-$typecsset-h6-size:             18px;
+//$typecsset-h1-size:             48px;
+//$typecsset-h2-size:             36px;
+//$typecsset-h3-size:             30px;
+//$typecsset-h4-size:             24px;
+//$typecsset-h5-size:             20px;
+//$typecsset-h6-size:             18px;
+//
+//$typecsset-show-baseline:       false;
 
-$typecsset-show-baseline:       false;
+$offwhite: #f3f3f3;
+$offblack: #242424;
+$lightgrey: #6f6f6f;
+$feint: #D6D6D6;
+$dblue: #303642;
+$highlight: #73A4E7;
 
-@import "../vendor/typecsset/typecsset";
-@import "mixins";
-@import "header";
+$sans: Helvetica, "Helvetica Neue", Arial, sans-serif;
+$serif: "Sentinel", Cambria, Georgia, serif;
 
-.container {
+$fbold: 700;
+$fsemi: 600;
+$fmedium: 500;
+
+
+//@import "mixins";
+// @import "header";
+
+body {
+    font-family: $sans;
+    background: $offwhite;
+    color: $offblack;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+// Header wrapper
+.wrap_large {
     width: 87.5%;
-    max-width: 1140px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
-.page-header {
-    margin-top: $typecsset-h1-size;
+// Post wrapper
+.wrap_small {
+    width: 87.5%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 0;
 }
 
-.page-header + p {
-    @include typecsset-font-size(24px);
+h1, h2, h3, h4, h5, h6 {
+    font-family: $serif;
 }
 
-.inner_content {
-    img {
-        max-width: 100%;
-        height: auto;
+h1 {
+    font-weight: $fbold;
+    font-size: 52px;
+}
+
+h2 {
+    font-weight: $fsemi;
+    font-size: 45px;
+}
+
+h3 {
+    font-weight: $fsemi;
+    font-size: 36px;
+}
+
+h4 {
+    font-weight: $fsemi;
+    font-size: 30px;
+}
+
+h5 {
+    font-weight: $fsemi;
+    font-size: 24px;
+}
+
+h6 {
+    font-weight: $fmedium;
+    font-size: 22px;
+}
+
+#masthead {
+    background-size: cover !important;
+    background-position: center center;
+    min-height: 600px;
+    padding-top: 40px;
+}
+
+.logo {
+    float: left;
+    color: $offwhite;
+}
+
+.logo svg {
+    width: 48px;
+    height: 48px;
+}
+
+.logo svg path {
+    fill: $offwhite;
+    -webkit-transition: fill 0.3s ease;
+    -o-transition: fill 0.3s ease;
+    transition: fill 0.3s ease;
+}
+
+.logo svg:hover path {
+    fill: $highlight;
+}
+
+nav {
+    float: right;
+    color: $offwhite;
+    font-weight: $fbold;
+    text-transform: uppercase;
+    margin-top: 12px;
+    li {
+        display: inline;
+        margin-right: 35px;
     }
+    li:last-child {
+        margin-right: 0;
+    }
+}
+
+nav a {
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: $highlight;
+}
+
+article p, article blockquote, main p {
+    line-height: 1.7;
+}
+
+article > *, main > * {
+    margin-bottom: 40px;
+}
+
+article > h1, main > h1 {
+    margin-bottom: 80px;
+}
+
+blockquote {
+    border-left: 4px solid $feint;
+    color: $lightgrey;
+    padding: 10px 100px;
+}
+
+article a {
+    text-decoration: underline;
 }
