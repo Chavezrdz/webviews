@@ -28,7 +28,7 @@ module.exports = function(grunt) {
                     imageAlpha: true,
                     quitAfter: true
                 },
-                src: ['build/images']
+                src: ['images']
             },
         },
 
@@ -106,6 +106,6 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('build', 'Compile a build for production.', ['jekyll:dev', 'sass', 'cssmin', 'clean:tmp', 'uglify']);
-    grunt.registerTask('default', 'Compile a build for production and optimise images.', ['build', 'imageoptim']);
+    grunt.registerTask('default', 'Compile a build for production and optimise images.', ['imageoptim', 'build']);
     grunt.registerTask('tasks', ['availabletasks'])
 };
