@@ -50,6 +50,7 @@ body {
     width: 87.5%;
     max-width: 900px;
     margin: 0 auto;
+    padding: 80px 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -135,4 +136,26 @@ nav a {
 
 nav a:hover {
     color: $highlight;
+}
+
+article p, article blockquote, main p {
+    line-height: 1.7;
+}
+
+article > *, main > * {
+    margin-bottom: 40px;
+}
+
+article > h1, main > h1 {
+    margin-bottom: 80px;
+}
+
+blockquote {
+    border-left: 4px solid $feint;
+    color: $lightgrey;
+    padding: 10px 100px;
+}
+
+article a {
+    text-decoration: underline;
 }
