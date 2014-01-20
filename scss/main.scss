@@ -159,3 +159,42 @@ blockquote {
 article a {
     text-decoration: underline;
 }
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+article ul {
+    list-style: none;
+    list-style-position: inside;
+    color: $lightgrey;
+    li {
+        margin-bottom: 10px;
+    }
+    li:before {
+        color: $feint;
+        content: "■";
+        padding-right: 30px;
+    }
+}
+
+article ol {
+    list-style: none;
+    list-style-position: inside;
+    color: $lightgrey;
+    counter-reset: customcounter;
+    li {
+        margin-bottom: 10px;
+    }
+    li:last-child {
+        margin-bottom: 0;
+    }
+    li:before {
+        content: counter(customcounter);
+        counter-increment: customcounter;
+        color: $feint;
+        padding-right: 30px;
+        font-weight: 600;
+    }
+}
