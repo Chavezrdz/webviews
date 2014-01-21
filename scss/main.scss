@@ -21,6 +21,7 @@ $highlight: #73A4E7;
 
 $sans: Helvetica, "Helvetica Neue", Arial, sans-serif;
 $serif: "Sentinel", Cambria, Georgia, serif;
+$mono: "Source Code Pro", Monaco, Consolas, "Lucida Console", monospace;
 
 $fbold: 700;
 $fsemi: 600;
@@ -197,4 +198,20 @@ article ol {
         padding-right: 30px;
         font-weight: 600;
     }
+}
+
+article code, article pre code {
+    background: $dblue;
+    font-family: $mono;
+    font-weight: $fsemi;
+}
+
+article pre code {
+    padding: 30px;
+    font-size: 13px;
+}
+
+article code {
+    padding: 0 5px;
+    font-weight: 400;
 }
