@@ -17,6 +17,7 @@ module.exports = function(grunt) {
                 files: {
                     'build/css/tmp/reset.css': 'scss/reset.scss',
                     'build/css/tmp/main.css': 'scss/main.scss',
+                    'build/css/tmp/queries.css': 'scss/queries.scss',
                     'build/css/tmp/solarized_dark.css': 'scss/solarized_dark.scss'
                 },
             },
@@ -48,7 +49,7 @@ module.exports = function(grunt) {
         cssmin: {
             combine: {
                 files: {
-                    'build/css/styles.css': ['build/css/tmp/reset.css', 'build/css/tmp/main.css', 'build/css/tmp/solarized_dark.css']
+                    'build/css/styles.css': ['build/css/tmp/reset.css', 'build/css/tmp/main.css', 'build/css/tmp/queries.css', 'build/css/tmp/solarized_dark.css']
                 },
             },
         },

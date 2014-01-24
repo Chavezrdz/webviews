@@ -1,0 +1,43 @@
+@media all and (min-width: 1000px) {
+    h1 {
+        font-size: 52px;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 22px;
+    }
+    body {
+        font-size: 18px;
+    }
+    #masthead {
+        min-height: 600px;
+    }
+    nav li {
+        margin-right: 35px;
+        font-size: 16px;
+    }
+    blockquote {
+        padding: 10px 100px;
+        font-size: 18px;
+    }
+    article ul, article ol {
+        font-size: 18px;
+        li:before {
+            padding-right: 30px;
+        }
+    }
+}
