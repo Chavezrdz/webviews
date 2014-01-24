@@ -14,10 +14,14 @@ authors:
         display_name: Ben
         web: http://beneb.info
         twitter: ben_eb
+        dribbble: beneb
         github: ben-eb
+        avatar: 'images/author_ben.jpg'
     dave:
         name: Dave McNally
         display_name: Dave
         web: http://dave.mn
         twitter: davemcnally
+        dribbble: davemcnally
         github: davemcnally
+        avatar: 'images/author_dave.jpg'
