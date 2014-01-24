@@ -9,7 +9,7 @@ layout: default
         <p class="post_meta">Published <time datetime="{{page.date}}">{{page.date | date_post}}</time> <span class="post_tags">{% include icons/post_tag.svg %}{{page.tags | join: ', '}}</span></p>
         <section class="post_author group">
             <img src="{{ site.authors[page.author].avatar }}" alt="{{ site.authors[page.author].display_name }}’s avatar" />
-            <p class="view_by">This was a view by <a href="{{ site.url }}/about#{{ post.author }}">{{ author.display_name }}</a></p>
+            <p class="view_by">This was a view by <a href="{{ site.url }}/about#{{ page.author }}">{{ site.authors[page.author].display_name }}</a></p>
             <ul>
                 <li><a href="https://twitter.com/{{ site.authors[page.author].twitter }}" class="author_twitter">{% include icons/author_twitter.svg %}</a></li>
                 <li><a href="https://dribbble.com/{{ site.authors[page.author].dribbble }}" class="author_dribbble">{% include icons/author_dribbble.svg %}</a></li>
