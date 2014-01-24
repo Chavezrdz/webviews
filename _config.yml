@@ -16,7 +16,7 @@ authors:
         twitter: ben_eb
         dribbble: beneb
         github: ben-eb
-        avatar: 'images/author_ben.jpg'
+        avatar: '/images/author_ben.jpg'
     dave:
         name: Dave McNally
         display_name: Dave
@@ -24,4 +24,4 @@ authors:
         twitter: davemcnally
         dribbble: davemcnally
         github: davemcnally
-        avatar: 'images/author_dave.jpg'
+        avatar: '/images/author_dave.jpg'
