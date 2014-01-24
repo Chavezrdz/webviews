@@ -220,3 +220,88 @@ article code {
     padding: 0 5px;
     font-weight: 400;
 }
+
+.post_meta {
+    font-size: 12px;
+    color: $lightgrey;
+    margin: 80px 0;
+}
+
+.post_tags {
+    display: block;
+    margin-top: 10px;
+}
+
+.post_tags svg {
+    width: 16px;
+    height: 16px;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+.post_tags svg path {
+    fill: $lightgrey;
+}
+
+.post_author {
+    border-top: 1px solid $feint;
+    padding-top: 60px;
+}
+
+.post_author img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    border-radius: 80px;
+    margin-right: 20px;
+}
+
+.view_by {
+    font-family: $serif;
+    font-weight: $fmedium;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.post_author ul {
+    list-style: none;
+    li:before {
+        content: none;
+        padding-right: 0;
+    }
+}
+
+.post_author ul li {
+    float: left;
+    margin-right: 10px;
+    a {
+        display: block;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.author_twitter svg {
+    width: 32px;
+    height: 32px;
+    path {
+        fill: #1EB1EA;
+    }
+}
+
+.author_dribbble svg {
+    width: 32px;
+    height: 32px;
+    path {
+        fill: #E74F89;
+    }
+}
+
+.author_github svg {
+    width: 33px;
+    height: 32px;
+    path {
+        fill: #000;
+    }
+}
