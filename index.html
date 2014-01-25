@@ -10,16 +10,8 @@ layout: default
         <article>
             <h1><a href="{{ post.url }}" title="Permalink to this post">{{ post.title }}</a></h1>
             {{ post.content }}
-            <p class="post_meta">Published <time datetime="{{ post.date }}">{{ post.date | date_post }}</time> <span class="post_tags">{% include icons/post_tag.svg %}{{post.tags | join: ', '}}</span></p>
-            <section class="post_author group">
-                <img src="{{ author.avatar }}" alt="{{ author.display_name }}’s avatar" />
-                <p class="view_by">This was a view by <a href="{{ site.url }}/about#{{ post.author }}">{{ author.display_name }}</a></p>
-                <ul>
-                    <li><a href="https://twitter.com/{{ author.twitter }}" class="author_twitter">{% include icons/author_twitter.svg %}</a></li>
-                    <li><a href="https://dribbble.com/{{ author.dribbble }}" class="author_dribbble">{% include icons/author_dribbble.svg %}</a></li>
-                    <li><a href="https://github.com/{{ author.github }}" class="author_github">{% include icons/author_github.svg %}</a></li>
-                </ul>
-            </section>
+            {% include _postmeta.html %}
+            {% include _author.html %}
         </article>
 
     </div><!-- //wrap_small -->
