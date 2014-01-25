@@ -1,0 +1,5 @@
+{% if post.tags %}
+    <p class="post_meta">Published <time datetime="{{ post.date }}">{{ post.date | date_post }}</time> <span class="post_tags">{% include icons/post_tag.svg %}{{post.tags | join: ', '}}</span></p>
+{% elsif page.tags %}
+    <p class="post_meta">Published <time datetime="{{page.date}}">{{page.date | date_post}}</time> <span class="post_tags">{% include icons/post_tag.svg %}{{page.tags | join: ', '}}</span></p>
+{% endif %}

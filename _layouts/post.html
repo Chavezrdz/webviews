@@ -6,7 +6,7 @@ layout: default
     <article>
         <h1>{{ page.title }}</h1>
         {{ content }}
-        <p class="post_meta">Published <time datetime="{{page.date}}">{{page.date | date_post}}</time> <span class="post_tags">{% include icons/post_tag.svg %}{{page.tags | join: ', '}}</span></p>
+        {% include _postmeta.html %}
         {% assign author = site.authors[page.author] %}
         {% include _author.html %}
     </article>

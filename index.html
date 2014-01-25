@@ -10,7 +10,7 @@ layout: default
         <article>
             <h1><a href="{{ post.url }}" title="Permalink to this post">{{ post.title }}</a></h1>
             {{ post.content }}
-            <p class="post_meta">Published <time datetime="{{ post.date }}">{{ post.date | date_post }}</time> <span class="post_tags">{% include icons/post_tag.svg %}{{post.tags | join: ', '}}</span></p>
+            {% include _postmeta.html %}
             <section class="post_author group">
                 <img src="{{ author.avatar }}" alt="{{ author.display_name }}’s avatar" />
                 <p class="view_by">This was a view by <a href="{{ site.url }}/about#{{ post.author }}">{{ author.display_name }}</a></p>
