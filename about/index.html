@@ -6,18 +6,11 @@ imagefeature: header_about.jpg
 
 <p class="page_intro">WebViews is written and maintained by Dave McNally and Ben Briggs. Our plan was to develop and publish a completely open-source project covering all aspects of the web industry. With that in mind, you can <a href="https://github.com/WebViews/webviews" title="WebViews on GitHub">view the source</a> on GitHub where you’re welcome to fork the project and use as you please!</p>
 
-<section class="post_author about_author group" id="dave">
-    <img src="{{ site.url }}/images/author_dave.jpg" alt="Dave’s avatar" />
-    <p class="view_by">Dave McNally</p>
-    <ul>
-        <li><a href="https://twitter.com/davemcnally" class="author_twitter">{% include icons/author_twitter.svg %}</a></li>
-        <li><a href="https://dribbble.com/davemcnally" class="author_dribbble">{% include icons/author_dribbble.svg %}</a></li>
-        <li><a href="https://github.com/davemcnally" class="author_github">{% include icons/author_github.svg %}</a></li>
-    </ul>
-</section>
-
-<p class="page_copy">I’m a freelance designer &amp; front-end developer with a passion for subtle details and mobile. A recent WordPress-to-Jekyll convert and terminal fan, I’m most at home with Photoshop, Sublime Text, iTerm and some hot coffee.</p>
-
+{% for author_id in site.author_ids %}
+    {% assign author = site.authors[author_id] %}
+    {% include _author.html %}
+{% endfor %}
+<!--
 <section class="post_author about_author group" id="ben">
     <img src="{{ site.url }}/images/author_ben.jpg" alt="Ben’s avatar" />
     <p class="view_by">Ben Briggs</p>
@@ -26,4 +19,4 @@ imagefeature: header_about.jpg
         <li><a href="https://dribbble.com/beneb" class="author_dribbble">{% include icons/author_dribbble.svg %}</a></li>
         <li><a href="https://github.com/ben-eb" class="author_github">{% include icons/author_github.svg %}</a></li>
     </ul>
-</section>
+</section> -->
