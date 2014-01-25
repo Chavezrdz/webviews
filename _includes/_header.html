@@ -5,9 +5,11 @@
                 <a class="logo" href="{{ site.url }}">{% include icons/webviews.svg %}</a>
                 <nav>
                     <ul>
-                        <li><a href="{{ site.url }}/views" title="Views">Views</a></li>
-                        <li><a href="{{ site.url }}/tags" title="Tags">Tags</a></li>
-                        <li><a href="{{ site.url }}/about" title="About">About</a></li>
+                        {% for page in site.pages %}
+                        {% unless page.slug == 'home' or page.slug == 'rss' %}
+                            <li><a href="{{ site.url }}/{{ page.slug }}" title="{{ page.slug }}">{{ page.slug }}</a></li>
+                        {% endunless %}
+                        {% endfor %}
                     </ul>
                 </nav>
             </div>
@@ -18,9 +20,11 @@
                 <a class="logo" href="{{ site.url }}">{% include icons/webviews.svg %}</a>
                 <nav>
                     <ul>
-                        <li><a href="{{ site.url }}/views" title="Views">Views</a></li>
-                        <li><a href="{{ site.url }}/tags" title="Tags">Tags</a></li>
-                        <li><a href="{{ site.url }}/about" title="About">About</a></li>
+                        {% for page in site.pages %}
+                        {% unless page.slug == 'home' or page.slug == 'rss' %}
+                            <li><a href="{{ site.url }}/{{ page.slug }}" title="{{ page.slug }}">{{ page.slug }}</a></li>
+                        {% endunless %}
+                        {% endfor %}
                     </ul>
                 </nav>
             </div>
