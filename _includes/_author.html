@@ -1,6 +1,6 @@
 <section class="post_author {% if page.path contains 'about' %} about_author {% endif %}group" id="{{ author.display_name }}">
     <img src="{{ site.url }}{{ author.avatar }}" alt="{{ author.display_name }}’s avatar" />
-    <p class="view_by">{% if page.path contains 'posts' or page.url == '/index.html' %}This was a view by{% endif %} <a href="{{ site.url }}/about#{{ author.display_name }}">{{ author.display_name }}</a></p>
+    <p class="view_by">{% if page.path contains 'posts' or page.url == '/index.html' %}This was a view by{% endif %}{% if post.author == 'dave' or post.author == 'ben' %} <a href="{{ site.url }}/about#{{ author.display_name }}">{{ author.display_name }}</a>{% else %} {{ author.display_name }}{% endif %}</p>
     <ul>
         <li><a href="https://twitter.com/{{ author.twitter }}" class="author_twitter">{% include icons/author_twitter.svg %}</a></li>
         <li><a href="https://dribbble.com/{{ author.dribbble }}" class="author_dribbble">{% include icons/author_dribbble.svg %}</a></li>

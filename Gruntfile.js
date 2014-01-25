@@ -69,7 +69,8 @@ module.exports = function(grunt) {
             dev: {
                 options: {
                     src: '.',
-                    dest: 'build'
+                    dest: 'build',
+                    config: ['_config.yml']
                 },
             },
         },
