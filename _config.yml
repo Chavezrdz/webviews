@@ -7,7 +7,7 @@ permalink: /views/:title
 exclude: [node_modules, scss, Gruntfile.js, LICENSE, package.json, README.md, fonts, js, Gemfile, Gemfile.lock, vendor, bower.json, .bowerrc, CNAME]
 url: 'http://webvie.ws'
 name: 'WebViews'
-author_ids: ['ben', 'dave']
+author_ids: ['testing', 'dave', 'ben']
 authors:
     ben:
         name: Ben Briggs
@@ -28,3 +28,12 @@ authors:
         github: davemcnally
         avatar: '/images/author_dave.jpg'
         bio: I’m a freelance designer & front-end developer with a passion for subtle details and mobile. A recent WordPress-to-Jekyll convert and terminal fan, I’m most at home with Photoshop, Sublime Text, iTerm and some hot coffee.
+    testing:
+        name: Guest Testing
+        display_name: Guest
+        email: test@guest.com
+        web: http://testing.com
+        twitter: guest
+        dribbble: guest
+        github: guest
+        avatar: '/images/guest_test.jpg'
