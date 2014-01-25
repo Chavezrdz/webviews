@@ -9,5 +9,7 @@ slug: about
 
 {% for author_id in site.author_ids %}
     {% assign author = site.authors[author_id] %}
+    {% if author_id == 'dave' or author_id == 'ben' %}
     {% include _author.html %}
+    {% endif %}
 {% endfor %}
